@@ -2,101 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
-
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-
-			body {
-				background-image: url(img/triangles.png);
-			}
-
-			#box {
-				width: 810px;
-				height: 320px;
-				position: absolute;
-				top: calc(50% - 160px);
-				left: calc(50% - 405px);
-			}
-
-			#box>div {
-				width: 160px;
-				height: 320px;
-				float: left;
-				margin-right: 0px;
-				box-shadow: -5px 5px 10px #000000;
-				overflow: hidden;
-				display: flex;
-				position: relative;
-			}
-
-			#box p {
-				width: 640px;
-				height: 50px;
-				position: absolute;
-				left: 0px;
-				bottom: 0px;
-				background: rgb(0, 0, 0, 0.5);
-			}
-
-			#box p a {
-				display: block;
-				text-decoration: none;
-				color: #ffffff;
-				font-size: 20px;
-				line-height: 24px;
-				text-indent: 10px;
-				padding: 15px;
-			}
-		</style>
+		<title></title> 
+		
 	</head>
 	<body>
-		<div id="box">
-			<div>
-				<img src="img/img1.jpg" />
-				<p>
-					<a href="#none">功夫熊猫</a>
-				</p>
-			</div>
-			<div>
-				<img src="img/img2.jpg" />
-				<p>
-					<a href="#none">功夫熊猫</a>
-				</p>
-			</div>
-			<div>
-				<img src="img/img3.jpg" />
-				<p>
-					<a href="#none">功夫熊猫</a>
-				</p>
-			</div>
-			<div>
-				<img src="img/img4.jpg" />
-				<p>
-					<a href="#none">功夫熊猫</a>
-				</p>
-			</div>
-			<div>
-				<img src="img/img5.jpg" />
-				<p>
-					<a href="#none">功夫熊猫</a>
-				</p>
-			</div>
-		</div>
+		<h>欢迎来到我的个人博客！</h1>
 	</body>
-	<script>
-		var arr = document.getElementById('box').getElementsByTagName('div');
-		
-		for (var i = 0; i < arr.length; i++) {		
-			arr[i].onclick = function() {
-				for (var j = 0; j < arr.length; j++) {
-					arr[j].style.cssText = 'width: 40px; transition: 0.5s';
-				}
-				this.style.cssText = 'width:640px; transition: 0.5s';
-			}
-		}
-	</script>
+	
 </html>
